@@ -1,0 +1,14 @@
+{
+  "max_native_per_tx_eth": 0.05,
+  "daily_native_cap_eth": 0.05,
+  "confirm_above_eth": 0.02,
+  "allowlist_enabled": false,
+  "allowlist": [
+    "minimum 1 transaction"
+  ],
+  "block_unlimited_approvals": true,
+  "max_gas_gwei": 50.0,
+  "cooldown_seconds": 15,
+  "autonomous_enabled": true,
+  "max_autonomy_intents_per_cycle": 3
+}

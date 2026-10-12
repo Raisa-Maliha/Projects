@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Wallet</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div class="brand">
+        <span class="mark"></span>
+        <div>
+          <h1>Agent Wallet</h1>
+          <p>Autonomous on-chain operations with risk control</p>
+        </div>
+      </div>
+      <div class="pills">
+        <span id="chainPill" class="pill">chain —</span>
+        <span id="modePill" class="pill">mode —</span>
+        <span id="rpcPill" class="pill">rpc —</span>
+      </div>
+    </header>
+
+    <section class="hero card">
+      <div>
+        <div class="label">Agent EOA</div>
+        <div id="address" class="mono">loading…</div>
+        <div class="balance-row">
+          <div>
+            <div class="label">Native</div>
+            <div id="native" class="num">— ETH</div>
+          </div>
+          <div>
+            <div class="label">Spent today</div>
+            <div id="spent" class="num">— ETH</div>
+          </div>
+        </div>
+        <div id="tokens" class="tokens"></div>
+      </div>
+      <form id="cmdForm" class="cmd">
+        <label for="cmd">Instruct the agent</label>
+        <textarea id="cmd" rows="3" placeholder="send 0.01 ETH to 0x…"></textarea>
+        <div class="cmd-actions">
+          <button type="submit">Execute intent</button>
+          <button type="button" id="autoBtn" class="ghost">Autonomy cycle</button>
+        </div>
+        <p class="hints">Try: what’s my balance · send 0.005 ETH to 0x… · set daily cap to 0.05 · allow 0x… · preview send 0.02 ETH to 0x…</p>
+      </form>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Risk policy</h2>
+        <form id="policyForm" class="policy">
+          <label>Max ETH / tx <input id="maxTx" type="number" step="0.001" /></label>
+          <label>Daily ETH cap <input id="dailyCap" type="number" step="0.001" /></label>
+          <label>Confirm above ETH <input id="confirmAbove" type="number" step="0.001" /></label>
+          <label>Max gas (gwei) <input id="maxGas" type="number" step="0.1" /></label>
+          <label>Cooldown (s) <input id="cooldown" type="number" step="1" /></label>
+          <label class="check"><input id="allowlistOn" type="checkbox" /> Enforce allowlist</label>
+          <label class="check"><input id="blockUnlimited" type="checkbox" /> Block unlimited approvals</label>
+          <label class="check"><input id="autonomyOn" type="checkbox" /> Autonomy enabled</label>
+          <label>Allowlist (one address per line)
+            <textarea id="allowlist" rows="3"></textarea>
+          </label>
+          <button type="submit">Save policy</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Agent log</h2>
+        <div id="reply" class="reply">Ready. Intents are parsed, risk-checked, simulated, then signed.</div>
+        <div id="feed" class="feed"></div>
+      </section>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

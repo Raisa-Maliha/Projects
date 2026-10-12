@@ -1,0 +1,511 @@
+[
+  {
+    "id": "0f6c4a00c73d",
+    "ts": "2026-10-12T19:18:19.467368+00:00",
+    "intent": {
+      "kind": "update_policy",
+      "text": "set daily cap to 0.05",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": {
+        "daily_native_cap_eth": 0.05
+      },
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000017
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Policy updated"
+  },
+  {
+    "id": "a4e4683a2e52",
+    "ts": "2026-10-12T19:18:00.832916+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "preview send 0.02 ETH to 0x44839848E0c632f9F3dd9180784638941907eB28",
+      "to": "0x44839848E0c632f9F3dd9180784638941907eB28",
+      "amount_eth": 0.02,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": true
+    },
+    "verdict": {
+      "decision": "confirm",
+      "reasons": [
+        "Amount is at/above confirm threshold 0.02 ETH"
+      ],
+      "estimated_gas_gwei": 0.001000017
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "45ca0032c463",
+    "ts": "2026-10-12T19:15:08.170660+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "preview send 0.02 ETH to 0x44839848E0c632f9F3dd9180784638941907eB28",
+      "to": "0x44839848E0c632f9F3dd9180784638941907eB28",
+      "amount_eth": 0.02,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": true
+    },
+    "verdict": {
+      "decision": "confirm",
+      "reasons": [
+        "Amount is at/above confirm threshold 0.02 ETH"
+      ],
+      "estimated_gas_gwei": 0.001000017
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "4cbea7021c56",
+    "ts": "2026-10-12T18:53:52.191487+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "send 0.005 ETH to 0x44839848E0c632f9F3dd9180784638941907eB28",
+      "to": "0x44839848E0c632f9F3dd9180784638941907eB28",
+      "amount_eth": 0.005,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Passed per-tx, daily, gas, and allowlist checks"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "934aa6406865",
+    "ts": "2026-10-12T18:53:35.504348+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "send 0.005 ETH to 0x",
+      "to": null,
+      "amount_eth": 0.005,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "deny",
+      "reasons": [
+        "Missing recipient address"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "denied",
+    "tx_hash": null,
+    "detail": "Missing recipient address"
+  },
+  {
+    "id": "86a73a77b7d3",
+    "ts": "2026-10-12T18:48:23.336369+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "fee3b6018e49",
+    "ts": "2026-10-12T18:48:23.097698+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "d598143a22da",
+    "ts": "2026-10-12T18:48:23.087943+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "ab35cee530e7",
+    "ts": "2026-10-12T18:48:22.948765+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "a89c7570b298",
+    "ts": "2026-10-12T18:48:22.797804+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "3c7487e4d9a6",
+    "ts": "2026-10-12T18:48:22.300411+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "06f3168d2d46",
+    "ts": "2026-10-12T18:48:21.897213+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "3313f836ed3e",
+    "ts": "2026-10-12T18:48:20.744291+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what\u2019s my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  },
+  {
+    "id": "e847307817e9",
+    "ts": "2026-10-12T18:47:02.191055+00:00",
+    "intent": {
+      "kind": "unknown",
+      "text": "sent 10 eth",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "deny",
+      "reasons": [
+        "Could not parse a safe on-chain intent"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "denied",
+    "tx_hash": null,
+    "detail": "Unsupported intent"
+  },
+  {
+    "id": "9851c834a695",
+    "ts": "2026-10-12T18:47:00.484171+00:00",
+    "intent": {
+      "kind": "unknown",
+      "text": "sent 10 eth",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "deny",
+      "reasons": [
+        "Could not parse a safe on-chain intent"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "denied",
+    "tx_hash": null,
+    "detail": "Unsupported intent"
+  },
+  {
+    "id": "7ed057edf50d",
+    "ts": "2026-10-12T18:44:37.075500+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "send 0.001 ETH to 0x1111111111111111111111111111111111111111",
+      "to": "0x1111111111111111111111111111111111111111",
+      "amount_eth": 0.001,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Passed per-tx, daily, gas, and allowlist checks"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "b5fd9b6defe4",
+    "ts": "2026-10-12T18:44:35.619199+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "preview send 0.001 ETH to 0x1111111111111111111111111111111111111111",
+      "to": "0x1111111111111111111111111111111111111111",
+      "amount_eth": 0.001,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": true
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Passed per-tx, daily, gas, and allowlist checks"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "a1e70fded737",
+    "ts": "2026-10-12T18:43:42.621510+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "preview send 0.001 ETH to 0x1111111111111111111111111111111111111111",
+      "to": "0x1111111111111111111111111111111111111111",
+      "amount_eth": 0.001,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": true
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Passed per-tx, daily, gas, and allowlist checks"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "failed",
+    "tx_hash": null,
+    "detail": "{'code': -32003, 'message': 'EVM error: OutOfFunds'}"
+  },
+  {
+    "id": "4ce72fa790d1",
+    "ts": "2026-10-12T18:43:41.076340+00:00",
+    "intent": {
+      "kind": "update_policy",
+      "text": "set daily cap to 0.08",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": {
+        "daily_native_cap_eth": 0.08
+      },
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Policy updated"
+  },
+  {
+    "id": "4fb6170bec32",
+    "ts": "2026-10-12T18:43:40.864862+00:00",
+    "intent": {
+      "kind": "transfer_native",
+      "text": "send 5 ETH to 0x000000000000000000000000000000000000dEaD",
+      "to": "0x000000000000000000000000000000000000dEaD",
+      "amount_eth": 5.0,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "deny",
+      "reasons": [
+        "Amount 5.0 ETH exceeds per-tx cap 0.05",
+        "Daily cap 0.1 ETH would be exceeded (spent 0.0)"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "denied",
+    "tx_hash": null,
+    "detail": "Amount 5.0 ETH exceeds per-tx cap 0.05; Daily cap 0.1 ETH would be exceeded (spent 0.0)"
+  },
+  {
+    "id": "f9402da7b735",
+    "ts": "2026-10-12T18:43:40.634609+00:00",
+    "intent": {
+      "kind": "query_balance",
+      "text": "what is my balance",
+      "to": null,
+      "amount_eth": null,
+      "token": null,
+      "spender": null,
+      "policy_patch": null,
+      "preview_only": false
+    },
+    "verdict": {
+      "decision": "allow",
+      "reasons": [
+        "Read/policy action \u2014 no funds move"
+      ],
+      "estimated_gas_gwei": 0.001000016
+    },
+    "status": "simulated",
+    "tx_hash": null,
+    "detail": "Balance query"
+  }
+]
